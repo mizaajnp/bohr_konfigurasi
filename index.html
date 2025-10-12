@@ -653,10 +653,39 @@
         </div>
       </div>
     </div>
-    <input type="text" placeholder="Tulis konfigurasi elektron" />
+    <div class="input-wrap">
+  <input type="text" placeholder="Tulis konfigurasi elektron" />
+  <button class="submitBtn">✔</button>
+</div>
   `;
 
         const input = card.querySelector("input");
+        const submitBtn = card.querySelector(".submitBtn");
+
+        function checkAnswer() {
+          const answer = input.value.trim().toUpperCase();
+          if (answer === el.bohr.toUpperCase()) {
+            card.classList.add("flipped");
+            if (soundEnabled) {
+              clickSound.currentTime = 0;
+              clickSound.play();
+            }
+            input.disabled = true;
+            submitBtn.disabled = true;
+          } else {
+            input.style.borderColor = "red";
+          }
+        }
+
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            checkAnswer();
+          }
+        });
+
+        submitBtn.addEventListener("click", checkAnswer);
+
         const inner = card.querySelector(".inner");
 
         input.addEventListener("keyup", (e) => {
