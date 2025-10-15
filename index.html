@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Tabel Periodik Interaktif</title>
+    <title>Tabel Periodik Interaktif – Flashcard Unsur</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
       rel="stylesheet"
@@ -165,10 +165,11 @@
   </head>
   <body>
     <audio id="clickSound" src="sound.mp3"></audio>
-    <h1>Tabel Periodik Interaktif</h1>
+    <h1>Tabel Periodik Interaktif – Flashcard Unsur</h1>
     <p class="subtitle">
-      Masukkan Konfigurasi elektron dengan benar (Contoh: K2 L8 M18 N32).
+      Kartu menampilkan detail unsur. Klik untuk melihat nomor atom saja.
     </p>
+
     <div class="table-wrap">
       <div id="ptable" class="ptable"></div>
     </div>
@@ -185,7 +186,7 @@
         { z: 8, s: "O", mass: "15.999", r: 2, c: 16, bohr: "K2 L6" },
         { z: 9, s: "F", mass: "18.998", r: 2, c: 17, bohr: "K2 L7" },
         { z: 10, s: "Ne", mass: "20.180", r: 2, c: 18, bohr: "K2 L8" },
-        { z: 11, s: "Na", mass: "22.990", r: 3, c: 1, bohr: "K2 L8 M1" },
+        { z: 11, s: "Na", mass: "22.990", r: 3, c: 1, bohr: "K2 L8 M1 " },
         { z: 12, s: "Mg", mass: "24.305", r: 3, c: 2, bohr: "K2 L8 M2" },
         { z: 13, s: "Al", mass: "26.982", r: 3, c: 13, bohr: "K2 L8 M3" },
         { z: 14, s: "Si", mass: "28.085", r: 3, c: 14, bohr: "K2 L8 M4" },
@@ -203,29 +204,29 @@
         { z: 26, s: "Fe", mass: "55.845", r: 4, c: 8, bohr: "K2 L8 M8 N8" },
         { z: 27, s: "Co", mass: "58.933", r: 4, c: 9, bohr: "K2 L8 M8 N8 O1" },
         { z: 28, s: "Ni", mass: "58.693", r: 4, c: 10, bohr: "K2 L8 M8 N8 O2" },
-        { z: 29, s: "Cu", mass: "63.546", r: 4, c: 11, bohr: "K2 L8 M18 N1" },
-        { z: 30, s: "Zn", mass: "65.38", r: 4, c: 12, bohr: "K2 L8 M18 N2" },
+        { z: 29, s: "Cu", mass: "63.546", r: 4, c: 11, bohr: "K2 L8 M18 N1 " },
+        { z: 30, s: "Zn", mass: "65.38", r: 4, c: 12, bohr: "K2 L8 M18 N2 " },
         { z: 31, s: "Ga", mass: "69.723", r: 4, c: 13, bohr: "K2 L8 M18 N3" },
-        { z: 32, s: "Ge", mass: "72.63", r: 4, c: 14, bohr: "K2 L8 M18 N4" },
+        { z: 32, s: "Ge", mass: "72.63", r: 4, c: 14, bohr: "K2 L8 M18 N4 " },
         { z: 33, s: "As", mass: "74.922", r: 4, c: 15, bohr: "K2 L8 M18 N5" },
         { z: 34, s: "Se", mass: "78.971", r: 4, c: 16, bohr: "K2 L8 M18 N6" },
         { z: 35, s: "Br", mass: "79.904", r: 4, c: 17, bohr: "K2 L8 M18 N7" },
         { z: 36, s: "Kr", mass: "83.798", r: 4, c: 18, bohr: "K2 L8 M18 N8" },
-        { z: 37, s: "Rb", mass: "85.468", r: 5, c: 1, bohr: "K2 L8 M18 N8 01" },
-        { z: 38, s: "Sr", mass: "87.62", r: 5, c: 2, bohr: "K2 L8 M18 N8 02" },
-        { z: 39, s: "Y", mass: "88.906", r: 5, c: 3, bohr: "K2 L8 M18 N8 03" },
-        { z: 40, s: "Zr", mass: "91.224", r: 5, c: 4, bohr: "K2 L8 M18 N8 04" },
-        { z: 41, s: "Nb", mass: "92.906", r: 5, c: 5, bohr: "K2 L8 M18 N8 05" },
-        { z: 42, s: "Mo", mass: "95.95", r: 5, c: 6, bohr: "K2 L8 M18 N8 06" },
-        { z: 43, s: "Tc", mass: "98", r: 5, c: 7, bohr: "K2 L8 M18 N8 07" },
-        { z: 44, s: "Ru", mass: "101.07", r: 5, c: 8, bohr: "K2 L8 M18 N8 08" },
+        { z: 37, s: "Rb", mass: "85.468", r: 5, c: 1, bohr: "K2 L8 M18 N8 O1" },
+        { z: 38, s: "Sr", mass: "87.62", r: 5, c: 2, bohr: "K2 L8 M18 N8 O2" },
+        { z: 39, s: "Y", mass: "88.906", r: 5, c: 3, bohr: "K2 L8 M18 N8 O3" },
+        { z: 40, s: "Zr", mass: "91.224", r: 5, c: 4, bohr: "K2 L8 M18 N8 O4" },
+        { z: 41, s: "Nb", mass: "92.906", r: 5, c: 5, bohr: "K2 L8 M18 N8 O5" },
+        { z: 42, s: "Mo", mass: "95.95", r: 5, c: 6, bohr: "K2 L8 M18 N8 O6" },
+        { z: 43, s: "Tc", mass: "98", r: 5, c: 7, bohr: "K2 L8 M18 N8 O7" },
+        { z: 44, s: "Ru", mass: "101.07", r: 5, c: 8, bohr: "K2 L8 M18 N8 O8" },
         {
           z: 45,
           s: "Rh",
           mass: "102.91",
           r: 5,
           c: 9,
-          bohr: "K2 L8 M18 N8 08 P1",
+          bohr: "K2 L8 M18 N8 O8 P1",
         },
         {
           z: 46,
@@ -233,7 +234,7 @@
           mass: "106.42",
           r: 5,
           c: 10,
-          bohr: "K2 L8 M18 N8 08 P2",
+          bohr: "K2 L8 M18 N8 O8 P2",
         },
         {
           z: 47,
@@ -241,7 +242,7 @@
           mass: "107.87",
           r: 5,
           c: 11,
-          bohr: "K2 L8 M18 N18 01",
+          bohr: "K2 L8 M18 N18 O1",
         },
         {
           z: 48,
@@ -249,7 +250,7 @@
           mass: "112.41",
           r: 5,
           c: 12,
-          bohr: "K2 L8 M18 N18 02",
+          bohr: "K2 L8 M18 N18 O2",
         },
         {
           z: 49,
@@ -257,7 +258,7 @@
           mass: "114.82",
           r: 5,
           c: 13,
-          bohr: "K2 L8 M18 N18 03",
+          bohr: "K2 L8 M18 N18 O3",
         },
         {
           z: 50,
@@ -265,7 +266,7 @@
           mass: "118.71",
           r: 5,
           c: 14,
-          bohr: "K2 L8 M18 N18 04",
+          bohr: "K2 L8 M18 N18 O4",
         },
         {
           z: 51,
@@ -273,7 +274,7 @@
           mass: "121.76",
           r: 5,
           c: 15,
-          bohr: "K2 L8 M18 N18 05",
+          bohr: "K2 L8 M18 N18 O5",
         },
         {
           z: 52,
@@ -281,7 +282,7 @@
           mass: "127.60",
           r: 5,
           c: 16,
-          bohr: "K2 L8 M18 N18 06",
+          bohr: "K2 L8 M18 N18 O6",
         },
         {
           z: 53,
@@ -289,7 +290,7 @@
           mass: "126.90",
           r: 5,
           c: 17,
-          bohr: "K2 L8 M18 N18 07",
+          bohr: "K2 L8 M18 N18 O7",
         },
         {
           z: 54,
@@ -297,7 +298,7 @@
           mass: "131.29",
           r: 5,
           c: 18,
-          bohr: "K2 L8 M18 N18 08",
+          bohr: "K2 L8 M18 N18 O8",
         },
         {
           z: 55,
@@ -305,7 +306,7 @@
           mass: "132.91",
           r: 6,
           c: 1,
-          bohr: "K2 L8 M18 N18 08 P1",
+          bohr: "K2 L8 M18 N18 O8 P1",
         },
         {
           z: 56,
@@ -313,7 +314,7 @@
           mass: "137.33",
           r: 6,
           c: 2,
-          bohr: "K2 L8 M18 N18 08 P2",
+          bohr: "K2 L8 M18 N18 O8 P2",
         },
         {
           z: 57,
@@ -321,7 +322,7 @@
           mass: "138.91",
           r: 6,
           c: 3,
-          bohr: "K2 L8 M18 N18 08 P3",
+          bohr: "K2 L8 M18 N18 O8 P3",
         },
         {
           z: 72,
@@ -337,7 +338,7 @@
           mass: "180.95",
           r: 6,
           c: 5,
-          bohr: "K2 L8 M18 N32 08 P5",
+          bohr: "K2 L8 M18 N32 O8 P5",
         },
         {
           z: 74,
@@ -345,7 +346,7 @@
           mass: "183.84",
           r: 6,
           c: 6,
-          bohr: "K2 L8 M18 N32 08 P6",
+          bohr: "K2 L8 M18 N32 O8 P6",
         },
         {
           z: 75,
@@ -353,7 +354,7 @@
           mass: "186.21",
           r: 6,
           c: 7,
-          bohr: "K2 L8 M18 N32 08 P7",
+          bohr: "K2 L8 M18 N32 O8 P7",
         },
         {
           z: 76,
@@ -361,7 +362,7 @@
           mass: "190.23",
           r: 6,
           c: 8,
-          bohr: "K2 L8 M18 N32 08 P8",
+          bohr: "K2 L8 M18 N32 O8 P8 ",
         },
         {
           z: 77,
@@ -369,7 +370,7 @@
           mass: "192.22",
           r: 6,
           c: 9,
-          bohr: "K2 L8 M18 N32 08 P8 Q1",
+          bohr: "K2 L8 M18 N32 O8 P8 Q1",
         },
         {
           z: 78,
@@ -377,7 +378,7 @@
           mass: "195.08",
           r: 6,
           c: 10,
-          bohr: "K2 L8 M18 N32 08 P8 Q2",
+          bohr: "K2 L8 M18 N32 O8 P8 Q2",
         },
         {
           z: 79,
@@ -385,7 +386,7 @@
           mass: "196.97",
           r: 6,
           c: 11,
-          bohr: "K2 L8 M18 N32 08 P8 Q3",
+          bohr: "K2 L8 M18 N32 O8 P8 Q3",
         },
         {
           z: 80,
@@ -393,7 +394,7 @@
           mass: "200.59",
           r: 6,
           c: 12,
-          bohr: "K2 L8 M18 N32 018 P2",
+          bohr: "K2 L8 M18 N32 O18 P2",
         },
         {
           z: 81,
@@ -401,7 +402,7 @@
           mass: "204.38",
           r: 6,
           c: 13,
-          bohr: "K2 L8 M18 N32 018 P3",
+          bohr: "K2 L8 M18 N32 O18 P3",
         },
         {
           z: 82,
@@ -409,7 +410,7 @@
           mass: "207.2",
           r: 6,
           c: 14,
-          bohr: "K2 L8 M18 N32 018 P4",
+          bohr: "K2 L8 M18 N32 O18 P4",
         },
         {
           z: 83,
@@ -417,7 +418,7 @@
           mass: "208.98",
           r: 6,
           c: 15,
-          bohr: "K2 L8 M18 N32 018 P5",
+          bohr: "K2 L8 M18 N32 O18 P5",
         },
         {
           z: 84,
@@ -425,7 +426,7 @@
           mass: "209",
           r: 6,
           c: 16,
-          bohr: "K2 L8 M18 N32 018 P6",
+          bohr: "K2 L8 M18 N32 O18 P6",
         },
         {
           z: 85,
@@ -433,7 +434,7 @@
           mass: "210",
           r: 6,
           c: 17,
-          bohr: "K2 L8 M18 N32 018 P7",
+          bohr: "K2 L8 M18 N32 O18 P7",
         },
         {
           z: 86,
@@ -441,7 +442,7 @@
           mass: "222",
           r: 6,
           c: 18,
-          bohr: "K2 L8 M18 N32 018 P8",
+          bohr: "K2 L8 M18 N32 O18 P8",
         },
         {
           z: 87,
@@ -449,7 +450,7 @@
           mass: "223",
           r: 7,
           c: 1,
-          bohr: "K2 L8 M18 N32 018 P8 Q1",
+          bohr: "K2 L8 M18 N32 O18 P8 Q1",
         },
         {
           z: 88,
@@ -457,7 +458,7 @@
           mass: "226",
           r: 7,
           c: 2,
-          bohr: "K2 L8 M18 N32 018 P8 Q2",
+          bohr: "K2 L8 M18 N32 O18 P8 Q2",
         },
         {
           z: 89,
@@ -465,7 +466,7 @@
           mass: "227",
           r: 7,
           c: 3,
-          bohr: "K2 L8 M18 N32 018 P8 Q3",
+          bohr: "K2 L8 M18 N32 O18 P8 Q3",
         },
         {
           z: 104,
@@ -473,7 +474,7 @@
           mass: "267",
           r: 7,
           c: 4,
-          bohr: "K2 L8 M18 N32 032 P8 Q4",
+          bohr: "K2 L8 M18 N32 O32 P8 Q4",
         },
         {
           z: 105,
@@ -481,7 +482,7 @@
           mass: "270",
           r: 7,
           c: 5,
-          bohr: "K2 L8 M18 N32 032 P8 Q5",
+          bohr: "K2 L8 M18 N32 O32 P8 Q5 ",
         },
         {
           z: 106,
@@ -489,7 +490,7 @@
           mass: "271",
           r: 7,
           c: 6,
-          bohr: "K2 L8 M18 N32 032 P8 Q6",
+          bohr: "K2 L8 M18 N32 O32 P8 Q6",
         },
         {
           z: 107,
@@ -497,7 +498,7 @@
           mass: "270",
           r: 7,
           c: 7,
-          bohr: "K2 L8 M18 N32 032 P8 Q7",
+          bohr: "K2 L8 M18 N32 O32 P8 Q7",
         },
         {
           z: 108,
@@ -505,7 +506,7 @@
           mass: "277",
           r: 7,
           c: 8,
-          bohr: "K2 L8 M18 N32 032 P8 Q8",
+          bohr: "K2 L8 M18 N32 O32 P8 Q8",
         },
         {
           z: 109,
@@ -513,7 +514,7 @@
           mass: "278",
           r: 7,
           c: 9,
-          bohr: "K2 L8 M18 N32 032 P8 Q8 R1",
+          bohr: "K2 L8 M18 N32 O32 P8 Q8 R1",
         },
         {
           z: 110,
@@ -521,7 +522,7 @@
           mass: "281",
           r: 7,
           c: 10,
-          bohr: "K2 L8 M18 N32 032 P8 Q8 R2",
+          bohr: "K2 L8 M18 N32 O32 P8 Q8 R2",
         },
         {
           z: 111,
@@ -529,7 +530,7 @@
           mass: "282",
           r: 7,
           c: 11,
-          bohr: "K2 L8 M18 N32 032 P18 Q1",
+          bohr: "K2 L8 M18 N32 O32 P18 Q1",
         },
         {
           z: 112,
@@ -537,7 +538,7 @@
           mass: "285",
           r: 7,
           c: 12,
-          bohr: "K2 L8 M18 N32 032 P18 Q2",
+          bohr: "K2 L8 M18 N32 O32 P18 Q2",
         },
         {
           z: 113,
@@ -545,7 +546,7 @@
           mass: "286",
           r: 7,
           c: 13,
-          bohr: "K2 L8 M18 N32 032 P18 Q3",
+          bohr: "K2 L8 M18 N32 O32 P18 Q3",
         },
         {
           z: 114,
@@ -553,7 +554,7 @@
           mass: "289",
           r: 7,
           c: 14,
-          bohr: "K2 L8 M18 N32 032 P18 Q4",
+          bohr: "K2 L8 M18 N32 O32 P18 Q4",
         },
         {
           z: 115,
@@ -561,7 +562,7 @@
           mass: "290",
           r: 7,
           c: 15,
-          bohr: "K2 L8 M18 N32 032 P18 Q5",
+          bohr: "K2 L8 M18 N32 O32 P18 Q5",
         },
         {
           z: 116,
@@ -569,7 +570,7 @@
           mass: "293",
           r: 7,
           c: 16,
-          bohr: "K2 L8 M18 N32 032 P18 Q6",
+          bohr: "K2 L8 M18 N32 O32 P18 Q6",
         },
         {
           z: 117,
@@ -577,7 +578,7 @@
           mass: "294",
           r: 7,
           c: 17,
-          bohr: "K2 L8 M18 N32 032 P18 Q7",
+          bohr: "K2 L8 M18 N32 O32 P18 Q7",
         },
         {
           z: 118,
@@ -585,7 +586,7 @@
           mass: "294",
           r: 7,
           c: 18,
-          bohr: "K2 L8 M18 N32 032 P18 Q8",
+          bohr: "K2 L8 M18 N32 O32 P18 Q8",
         },
       ];
 
@@ -719,5 +720,3 @@
     </script>
   </body>
 </html>
-
-
